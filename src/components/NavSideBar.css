@@ -1,0 +1,82 @@
+#sidenavbar {
+    width: 100%;
+    display: flex; 
+        background-color: bisque;
+}
+
+header {
+    position: relative;
+    display: flex;
+}
+
+.margin {
+
+    padding: 4%;
+    width: 100%;
+}
+
+#nav1 { 
+    z-index: 0;
+}
+
+#nav1, .nav1
+ {
+     z-index: 1;
+     background-color: red;
+     animation-name: move;
+     
+}
+
+#Burger {
+    width: 100%;
+    cursor: pointer;
+    flex-direction: column;
+    margin: 10%;
+    padding-top: 10%;
+    padding-left: 6%;
+    color: black;
+    font-size: 3em;
+}
+
+#Invisibile {
+    display: block;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: red;
+    color: white;    
+}
+
+.nav {
+    display: block;
+    padding: 1%;
+    margin-top: 15%;
+    color: white;
+    text-decoration: none;
+
+}
+
+#Invisibile.visibile {
+    display: block;
+    flex-direction: column; 
+    visibility: visible;
+    animation: 400ms linear .2s 1 forwards slideOutLeft;
+    
+
+}
+
+
+@keyframes slide {
+    100% { 
+        left: 0; 
+    }
+}
+
+@keyframes move {
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
